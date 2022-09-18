@@ -8,7 +8,6 @@ import { userSchemas } from "./modules/user/user.schema"
 import { productSchemas } from "./modules/product/product.schema"
 import { version } from '../package.json'
 
-
 export const server = Fastify()
 
 declare module 'fastify' {

@@ -3,7 +3,7 @@ import prisma from "../../utils/prisma"
 import { hashPassword } from '../../utils/hash'
 
 export async function createUser(input: CreateUserInput) {
-
+    
     const { password, ...rest } = input
 
     const { hash, salt } = hashPassword(password)
